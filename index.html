@@ -53,7 +53,14 @@
                         <span class="mo-logo"><img src="./images/mo-logo.png" alt="홈으로 이동"></span>
                     </a>
                 </h1>
-                
+                <div class="d-floating">
+                    <a href="#">
+                        <img src="./images/floating.png" alt="창업설명회 바로가기">
+                    </a>
+                </div>
+                <div class="m-floating">
+                    <a href="#">가맹문의</a>
+                </div>
                 <div class="btn-nav">
                     <span>라인</span>
                     <span>라인</span>
@@ -166,10 +173,26 @@
                         </ul>
                     </div>
                 </nav>
-                <div class="floating">
-                    <a href="#">
-                        <img src="./images/floating.png" alt="창업설명회 바로가기">
-                    </a>
+            </div>
+            <div class="pop-up">
+                <div class="container">
+                    <div class="pop-up-top">
+                        <h3>가맹문의</h3>
+                        <div class="btn-close" id="btn-close">
+                            <i class="fa fa-times" aria-hidden="true"></i>
+                        </div>
+                        <div class="video">
+                            <video controls loop>
+                                <source src="./media/hollys.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <div class="pop-up-bottom">
+                        <ul>
+                            <li><a href="#">문의글</a></li>
+                            <li><a href="#">상담전화</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </header>
@@ -438,6 +461,27 @@
                     prevEl: '.swiper-button-prev',
                 },
             });
+
+            // 가맹문의 팝업 호출 
+            $('.m-floating').on({
+                'click':function(){
+                    $('.pop-up').css('transform','translate(0,0)')
+                }
+            });
+
+            $('.d-floating').on({
+                'click':function(){
+                    $('.pop-up').css('transform','translate(0,0')
+                }
+            })
+
+            // 가맹문의 팝업 닫기 - 모바일
+            $('.btn-close').on({
+                'click':function(){
+                    $('.pop-up').css('transform','translate(0,-100%)')
+                }
+            })
+
         })
     </script>
 </body>
