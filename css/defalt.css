@@ -111,6 +111,6 @@ address{font-style:normal;}
     .d-sub-nav li li a{color:#fff;font-weight:200;}
     .d-sub-nav li li a:hover{color:rgba(255,255,255,1);}
     .m-floating{display:none;}
-    .d-floating{display:block;position:fixed;right:10%;top:10%;z-index:99999;}
+    .d-floating{display:block;position:fixed;right:12%;top:20%;z-index:99999;}
     .pop-up-bottom{margin-top:30px;padding-bottom:30px;}
 }

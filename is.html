@@ -54,7 +54,14 @@
                         <span class="mo-logo"><img src="./images/mo-logo.png" alt="홈으로 이동"></span>
                     </a>
                 </h1>
-                
+                <div class="d-floating">
+                    <a href="#">
+                        <img src="./images/floating.png" alt="창업설명회 바로가기">
+                    </a>
+                </div>
+                <div class="m-floating">
+                    <a href="#">가맹문의</a>
+                </div>
                 <div class="btn-nav">
                     <span>라인</span>
                     <span>라인</span>
@@ -167,10 +174,27 @@
                         </ul>
                     </div>
                 </nav>
-                <div class="floating">
-                    <a href="#">
-                        <img src="./images/floating.png" alt="창업설명회 바로가기">
-                    </a>
+                
+            </div>
+            <div class="pop-up">
+                <div class="container">
+                    <div class="pop-up-top">
+                        <h3>가맹문의</h3>
+                        <div class="btn-close" id="btn-close">
+                            <i class="fa fa-times" aria-hidden="true"></i>
+                        </div>
+                        <div class="video">
+                            <video controls>
+                                <source src="./media/hollys.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <div class="pop-up-bottom">
+                        <ul>
+                            <li><a href="#">문의글</a></li>
+                            <li><a href="#">상담전화</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </header>
@@ -227,23 +251,6 @@
 
     <!-- 외부라이브러리 / jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script>
-        $(function(){
-            // 모바일 네비 호출
-            $('.btn-nav').on({
-                'click':function(){
-                    $('.nav').slideToggle(100);
-                }
-            });
-
-            $('.main-nav>li').on({
-                'click':function(){
-                    $('.main-nav>li').not(this).children('ul').slideUp();
-                    $(this).children('.sub-nav').slideToggle(100);
-                }
-            });                        
-            
-        })
-    </script>
+    <script src="./js/index.js"></script>
 </body>
 </html>
