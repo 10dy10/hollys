@@ -182,7 +182,7 @@
                             <i class="fa fa-times" aria-hidden="true"></i>
                         </div>
                         <div class="video">
-                            <video controls loop>
+                            <video controls>
                                 <source src="./media/hollys.mp4" type="video/mp4">
                             </video>
                         </div>
@@ -431,58 +431,6 @@
 
     <!-- 외부라이브러리 / jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script>
-        $(function(){
-            // 모바일 네비 호출
-            $('.btn-nav').on({
-                'click':function(){
-                    $('.nav').slideToggle(100);
-                }
-            });
-
-            $('.main-nav>li').on({
-                'click':function(){
-                    $('.main-nav>li').not(this).children('ul').slideUp();
-                    $(this).children('.sub-nav').slideToggle(100);
-                }
-            })
-                        
-            // swiper
-            const swiper = new Swiper('.swiper', {
-                loop: true,
-                autoplay: {
-                    delay: 3000,
-                },
-                pagination: {
-                    el: '.swiper-pagination',
-                },
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                },
-            });
-
-            // 가맹문의 팝업 호출 
-            $('.m-floating').on({
-                'click':function(){
-                    $('.pop-up').css('transform','translate(0,0)')
-                }
-            });
-
-            $('.d-floating').on({
-                'click':function(){
-                    $('.pop-up').css('transform','translate(0,0')
-                }
-            })
-
-            // 가맹문의 팝업 닫기 - 모바일
-            $('.btn-close').on({
-                'click':function(){
-                    $('.pop-up').css('transform','translate(0,-100%)')
-                }
-            })
-
-        })
-    </script>
+    <script src="./js/index.js"></script>
 </body>
 </html>

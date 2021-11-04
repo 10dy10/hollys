@@ -60,7 +60,7 @@ html,body{font-family: 'Noto Sans KR', sans-serif;}
 .btn-close i{font-size:28px;}
 .video{display:flex;}
 video{width:100%;margin:50px auto 0;}
-.pop-up-bottom{margin-top:30px;padding-bottom:30px;}
+.pop-up-bottom{margin-top:20px;}
 .pop-up-bottom ul{display:flex;justify-content:space-between;text-align:center;}
 .pop-up-bottom ul li{width:48%;border-radius:10px;padding:5px 0;background-color:#b5121b;}
 .pop-up-bottom ul li a{color:#fff;}
@@ -112,4 +112,5 @@ address{font-style:normal;}
     .d-sub-nav li li a:hover{color:rgba(255,255,255,1);}
     .m-floating{display:none;}
     .d-floating{display:block;position:fixed;right:10%;top:10%;z-index:99999;}
+    .pop-up-bottom{margin-top:30px;padding-bottom:30px;}
 }
