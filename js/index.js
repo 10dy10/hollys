@@ -24,6 +24,7 @@ $(function(){
     // swiper
     const swiper = new Swiper('.swiper', {
         loop: true,
+        effect: 'fade',
         autoplay: {
             delay: 3000,
         },
