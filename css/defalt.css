@@ -107,5 +107,8 @@ address{font-style:normal;}
     .d-nav{display:block;}
     .m-floating{display:none;}
     .d-floating{display:block;}
+    
+    .pop-up .container{max-width:1000px;}
     .pop-up-bottom{margin-top:30px;padding-bottom:30px;}
+    
 }
